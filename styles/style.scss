@@ -4,55 +4,12 @@
     margin: 0;
     box-sizing: border-box;
 }
-
-$roxo-escuro: #0C0421;
-$roxo-vibrante: #4E75FF;
-$roxo-calmante: #85A0FF;
-$lilas: #CAD4FA;
-$verde-calamnte: #E8F5C8;
-$verde-gradiente: linear-gradient(180deg, $verde-calamnte 0%, rgba(255, 255, 255, 1) 96%);
-$font-krona: 'Krona One', sans-serif;
-$font-montserrat: 'Montserrat', sans-serif;
+@import './abstract/variaveis';
+@import './abstract/mixins';
+@import './components/header';
+@import './components/nosso-espaco';
 
 body {
     font-family: $font-montserrat;
 }
 
-
-// Header 
-header {
-    background: $verde-gradiente;
-    // width: 100%;
-    padding: 2rem;
-
-    nav {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        row-gap: 1rem;
-
-        img {
-            width: 270px;
-            height: 88px;
-        }
-
-        .line {
-            width: 94%;
-            border-bottom: 1px solid #000;
-        }
-
-        ul {
-            display: inline-flex;
-            list-style: none;
-
-            a {
-                color: $roxo-escuro;
-                margin: 0 1.5rem;
-                text-decoration: none;
-                font-size: 22px;
-                font-weight: 400;
-                line-height: 150%;
-            }
-        }
-    }
-}
