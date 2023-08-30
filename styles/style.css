@@ -168,7 +168,7 @@ header #home .img-home {
   margin: 0 auto;
   display: inline-flex;
 }
-#descontos .form-inscricao .input-btn input, #descontos .form-inscricao .input-btn #contatos .form-contato .inputs textarea, #contatos .form-contato .inputs #descontos .form-inscricao .input-btn textarea {
+#descontos .form-inscricao .input-btn input {
   border: none;
   outline: none;
   width: 65%;

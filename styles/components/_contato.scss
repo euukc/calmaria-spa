@@ -1,3 +1,6 @@
+
+@import '../abstract/variaveis';
+@import '../abstract/mixins';
 #contatos {
     @include central-margin;
     display: flex;

@@ -1,23 +1,12 @@
-// Variaveis
-* 
-    padding: 0
-    margin: 0
-    box-sizing: border-box
+@use './abstract/variaveis'
+@use './abstract/mixins'
 
-
-@import './abstract/variaveis'
-@import './abstract/mixins'
-
-body
-    font-family: $font-montserrat
-
-
-@import './components/header'
-@import './components/nosso-espaco'
-@import './components/servicos'
-@import './components/desconto'
-@import './components/contato'
-@import './components/footer'
-
+@use './root'
+@use './components/header'
+@use './components/nosso-espaco'
+@use './components/servicos'
+@use './components/desconto'
+@use './components/contato'
+@use './components/footer'
 
 
