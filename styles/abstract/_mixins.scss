@@ -1,0 +1,24 @@
+@mixin ff-fs($f-family, $f-size, $color) {
+    font-family: $f-family;
+    font-size: $f-size;
+    color: $color;
+    @media (max-width: 768px){
+        font-size: calc($f-size/1.2);
+    }
+    @media (max-width: 420px){
+        font-size: calc($f-size/1.6);
+        // line-height: 2.5rem;
+    }
+}
+
+@mixin margem-central($width) {
+    margin: 0 auto;
+    width: $width;
+    max-width: 1197px;
+}
+
+@mixin row-wrap($width){
+    @media(max-width: $width){
+        flex-wrap: wrap;
+    }
+}
