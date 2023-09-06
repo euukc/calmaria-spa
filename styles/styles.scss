@@ -1,9 +1,9 @@
+@use './abstract/base';
 @use './components/header';
-@use './components/nosso-servico';
+@use './components/nosso-espaco';
+@use './components/servicos';
+@use './components/desconto';
+@use './components/contatos';
+@use './components/_footer.sass'
 
 
-body {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}

@@ -1,3 +1,9 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 header {
   background: linear-gradient(180deg, #E8F5C8 0%, #FFFFFF 96.87%);
   padding: 2rem;
@@ -64,6 +70,7 @@ header #home .textos-home h1 {
   font-family: "Krona One", sans-serif;
   font-size: 40px;
   color: #0c0421;
+  font-weight: 400;
   line-height: 4rem;
 }
 @media (max-width: 768px) {
@@ -124,6 +131,7 @@ header #home .img-home img {
   font-family: "Krona One", sans-serif;
   font-size: 32px;
   color: #4e75ff;
+  font-weight: 400;
 }
 @media (max-width: 768px) {
   #nosso-espaco .detalhes .espaco-textos .titulo {
@@ -157,8 +165,222 @@ header #home .img-home img {
   flex-direction: row-reverse;
 }
 
-body {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+#servico {
+  background: linear-gradient(180deg, #E8F5C8 0%, #FFFFFF 96.87%);
+  padding: 5rem 0;
+}
+#servico .cards {
+  margin: 0 auto;
+  width: 80%;
+  max-width: 1197px;
+  display: flex;
+  gap: 1.5rem;
+}
+#servico .cards .card {
+  text-align: center;
+  border: 1px solid #fff;
+  border-radius: 3rem;
+  padding: 1.5rem 1rem;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.7) 0%, rgba(202, 212, 250, 0.3) 100%);
+  transition: 0.3s;
+}
+#servico .cards .card-titulo {
+  font-family: "Krona One", sans-serif;
+  font-size: 1.6rem;
+  color: #0c0421;
+  font-weight: 400;
+}
+@media (max-width: 768px) {
+  #servico .cards .card-titulo {
+    font-size: 1.3333333333rem;
+  }
+}
+@media (max-width: 420px) {
+  #servico .cards .card-titulo {
+    font-size: 1rem;
+  }
+}
+#servico .cards .card-texto {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.3rem;
+  color: #0c0421;
+}
+@media (max-width: 768px) {
+  #servico .cards .card-texto {
+    font-size: 1.0833333333rem;
+  }
+}
+@media (max-width: 420px) {
+  #servico .cards .card-texto {
+    font-size: 0.8125rem;
+  }
+}
+
+#desconto {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  padding: 5rem 0;
+}
+#desconto h4 {
+  font-family: "Krona One", sans-serif;
+  font-size: 1.9rem;
+  color: #0c0421;
+  font-weight: 400;
+}
+@media (max-width: 768px) {
+  #desconto h4 {
+    font-size: 1.5833333333rem;
+  }
+}
+@media (max-width: 420px) {
+  #desconto h4 {
+    font-size: 1.1875rem;
+  }
+}
+#desconto p {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.3rem;
+  color: #0c0421;
+}
+@media (max-width: 768px) {
+  #desconto p {
+    font-size: 1.0833333333rem;
+  }
+}
+@media (max-width: 420px) {
+  #desconto p {
+    font-size: 0.8125rem;
+  }
+}
+#desconto .input-btn {
+  width: 790px;
+  height: 65px;
+  border-radius: 65px;
+  border: 1px solid #4e75ff;
+  margin: 0 auto;
+  display: inline-flex;
+}
+#desconto .input-btn input {
+  border: none;
+  outline: none;
+  width: 513.5px;
+  margin-left: 2rem;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.2rem;
+  color: #0c0421;
+}
+@media (max-width: 768px) {
+  #desconto .input-btn input {
+    font-size: 1rem;
+  }
+}
+@media (max-width: 420px) {
+  #desconto .input-btn input {
+    font-size: 0.75rem;
+  }
+}
+#desconto .input-btn button {
+  width: 276.5px;
+  color: white;
+  background: #4e75ff;
+  border-radius: 0 65px 65px 0;
+  border: none;
+  font-size: 18px;
+}
+
+#contatos {
+  margin: 0 auto;
+  width: 80%;
+  max-width: 1197px;
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
+}
+#contatos .contatos-imgs {
+  max-width: 50%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: space-around;
+}
+#contatos .contatos-imgs img {
+  width: 100%;
+}
+#contatos .contatos-imgs img:nth-child(n+2) {
+  width: 48%;
+}
+#contatos .contatos-form {
+  max-width: 50%;
+  background: linear-gradient(180deg, #E8F5C8 0%, #FFFFFF 96.87%);
+  border-radius: 2rem;
+  padding: 2rem 3rem;
+}
+#contatos .contatos-form .titulo {
+  font-family: "Krona One", sans-serif;
+  font-size: 1.9rem;
+  color: #4e75ff;
+  font-weight: 400;
+}
+@media (max-width: 768px) {
+  #contatos .contatos-form .titulo {
+    font-size: 1.5833333333rem;
+  }
+}
+@media (max-width: 420px) {
+  #contatos .contatos-form .titulo {
+    font-size: 1.1875rem;
+  }
+}
+#contatos .contatos-form .infos, #contatos .contatos-form .inputs .form-group label {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.3rem;
+  color: #0c0421;
+}
+@media (max-width: 768px) {
+  #contatos .contatos-form .infos, #contatos .contatos-form .inputs .form-group label {
+    font-size: 1.0833333333rem;
+  }
+}
+@media (max-width: 420px) {
+  #contatos .contatos-form .infos, #contatos .contatos-form .inputs .form-group label {
+    font-size: 0.8125rem;
+  }
+}
+#contatos .contatos-form .inputs {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1.5rem;
+  align-self: stretch;
+}
+#contatos .contatos-form .inputs input, #contatos .contatos-form .inputs .btn, #contatos .contatos-form .inputs textarea {
+  border-radius: 25px;
+  padding: 1rem;
+  border: none;
+}
+#contatos .contatos-form .inputs .form-group {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+#contatos .contatos-form .inputs .form-group label {
+  font-weight: bold;
+}
+#contatos .contatos-form .inputs .btn {
+  margin-top: 2rem;
+  background: #4e75ff;
+  color: white;
+  width: 100%;
+  font-size: 1rem;
+}
+
+footer {
+  background: #E8F5C8;
+  padding: 1.5rem;
+  text-align: center;
+  margin-top: 2rem;
 }/*# sourceMappingURL=styles.css.map */
